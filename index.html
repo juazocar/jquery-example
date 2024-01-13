@@ -30,6 +30,17 @@
     <label for="exampleInputPassword1">Password</label>
     <input type="password" class="form-control" id="exampleInputPassword1">
   </div>
+  <div class="form-group">
+    <label for="regionesSelect">Seleccione su Región</label>
+    <select class="form-control" id="regionesSelect">
+      <option value="0">Seleccione...</option>
+      <option value="I">I Región</option>
+      <option value="II">II Región</option>
+      <option value="III">III Región</option>
+      <option value="IV">IV Región</option>
+      <option value="RM">Región Metropolitana</option>
+    </select>
+  </div>
   <div class="form-group form-check">
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1">Check me out</label>
@@ -58,26 +69,6 @@
       </div>
     </div>
   </div>
-<script>
-    $("#formulario").submit(function(){
-            event.preventDefault();
-
-            console.log('Llamado al evento submit del formulario');
-
-            var correo = $("#exampleInputEmail1").val();
-            var password = $("#exampleInputPassword1").val();
-
-            console.log(correo);
-            console.log(password);
-
-            if(correo == ''){
-                alert("El email no puede ir vacío");
-            } else {
-                $('#myModal').modal('show');
-            }
-
-           
-        })
-</script>
+<script src="js/validaciones_jquery.js" ></script>
 </body>
 </html>
